@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Cor -->
+    <solid android:color="@color/lightGrey"/>
+    <!--Arrendondamento do botao-->
+    <corners android:radius="5dp"/>
+    <!--Borda-->
+    <stroke android:width="3dp" android:color="@color/white"/>
+
+</shape>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/exibe_numeros"
+        android:layout_width="385dp"
+        android:layout_height="97dp"
+        android:ellipsize="middle"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text=""
+        android:textSize="60sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/exibe_resultado"
+        android:layout_width="375dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="middle"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="60sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/igualdade" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/subtracao"
+        app:layout_constraintTop_toBottomOf="@+id/number6" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number9"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/divisao"
+        app:layout_constraintTop_toBottomOf="@+id/exibe_numeros" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number0"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/multiplicacao"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/backgroundbutton_operacoes"
+        android:gravity="center"
+        android:text="×"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisao" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/multiplicacao"
+        app:layout_constraintTop_toBottomOf="@+id/number9" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/number6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/number4"
+        app:layout_constraintTop_toBottomOf="@+id/number8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number00"
+        android:layout_width="163dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="00"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/igualdade"
+        app:layout_constraintEnd_toStartOf="@+id/adicao"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/number0"
+        app:layout_constraintTop_toBottomOf="@+id/number3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exibe_numeros" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/igualdade"
+        android:layout_width="345dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backgroundbutton_operacoes"
+        android:gravity="center"
+        android:text="="
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number00" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/divisao"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/backgroundbutton_operacoes"
+        android:gravity="center"
+        android:text="÷"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exibe_numeros" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/number3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/number1"
+        app:layout_constraintTop_toBottomOf="@+id/number5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/subtracao"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/backgroundbutton_operacoes"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiplicacao" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/number9"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/number7"
+        app:layout_constraintTop_toBottomOf="@+id/exibe_numeros" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/adicao"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/backgroundbutton_operacoes"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtracao" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/number4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/backgroundbutton_numeros"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
